@@ -1,0 +1,4 @@
+"""Onboarding router."""
+from fastapi import APIRouter
+
+router = APIRouter(prefix="/onboarding", tags=["onboarding"])

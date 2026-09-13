@@ -1,0 +1,8 @@
+# Backend dependencies
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+supabase
+groq
+python-dotenv
