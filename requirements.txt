@@ -1,0 +1,16 @@
+
+fastapi
+uvicorn[standard]
+
+pydantic
+pydantic-settings
+
+sqlalchemy>=2.0
+asyncpg
+alembic
+
+supabase
+
+groq
+
+python-multipart
