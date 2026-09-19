@@ -15,8 +15,8 @@ if str(backend_dir) not in sys.path:
     sys.path.insert(0, str(backend_dir))
 
 from sqlalchemy import func, select
-from app.db.models import Concept, FollowUp, Question, Topic
-from app.db.session import AsyncSessionLocal
+from backend.app.db.models import Concept, FollowUp, Question, Topic
+from backend.app.db.session import AsyncSessionLocal
 
 
 TOPICS_DATA = [

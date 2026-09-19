@@ -4,7 +4,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import settings
+from app.routers.interview import router as interview_router
 from app.routers.onboarding import router as onboarding_router
+from app.routers.report import router as report_router
 from app.routers.topics import router as topics_router
 
 app = FastAPI(title="PARAKH API", version="1.0.0")
@@ -29,6 +31,8 @@ app.add_middleware(
 # Register routers
 app.include_router(onboarding_router)
 app.include_router(topics_router)
+app.include_router(interview_router)
+app.include_router(report_router)
 
 
 @app.get("/")
