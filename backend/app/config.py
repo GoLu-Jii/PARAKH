@@ -13,6 +13,7 @@ class Settings(BaseSettings):
     supabase_service_role_key: str = ""
     groq_api_key: str = ""
     database_url: str = ""
+    cors_origins: str = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
         env_file=ROOT_DIR / ".env",
